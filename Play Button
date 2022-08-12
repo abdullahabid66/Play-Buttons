@@ -1,0 +1,33 @@
+import javax.swing.*;
+public class FirstGui
+{
+	public static void main(String args[])
+	{
+		JFrame frm = new JFrame("My First GUI");
+	//	Container con=();
+		
+		frm.setSize(500,500);
+		JButton btn1 = new JButton("R");
+		btn1.setBounds(100,100,20,450);
+		
+		JButton btn2 = new JButton("Bottom");
+		btn2.setBounds(100,400,450,22);
+		
+		JButton btn3 = new JButton("L");
+		btn3.setBounds(530,100,20,450);
+		
+		JButton btn4 = new JButton("Top");
+		btn4.setBounds(100,200,450,22);
+		frm.add(btn1);
+		frm.add(btn2);
+		frm.add(btn3);
+		frm.add(btn4);
+		
+		frm.setLayout(null);
+		frm.setVisible(true);
+		frm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		
+	}
+}
